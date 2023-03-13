@@ -214,3 +214,7 @@ document.querySelector('#submit').addEventListener('click', () => {
     console.log(JSON.stringify(Meta_viewport))
     console.log(JSON.stringify(Meta_charset))
 });
+
+$(document).ready(function(){
+    $("#category_input").focus();
+})
