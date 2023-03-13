@@ -22,6 +22,8 @@ body {
 }
 
 .wrapper {
+  margin-top: 12px;
+  margin-bottom: 12px;
   align-items: center;
   justify-content: center;
   width: 992px;
@@ -175,12 +177,5 @@ body {
 @media (max-width:360px) {
     .wrapper{
         padding: 12px;
-    }
-}
-
-@media (max-width:576px) {
-    .wrapper{
-        margin-top: 12px;
-        margin-bottom: 12px;
     }
 }
