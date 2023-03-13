@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TCI Admin - Blog backend</title>
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Manual CSS  -->
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="mx-0 row d-flex justify-content-center">
+            <div class="wrapper">
+                <div class="Category">
+                    <h2>Category</h2>
+                    <input type="text" spellcheck="false" id="category_input">
+                </div>
+                <div class="Main_Heading">
+                    <h2>Main Heading</h2>
+                    <input type="text" spellcheck="false" id="Main_Heading_input">
+                </div>
+                <div class="Author_Name">
+                    <h2>Author Name</h2>
+                    <input type="text" spellcheck="false" id="Author_Name_input">
+                </div>
+                <div class="Image">
+                    <h2>Select Image</h2>
+                    <input type="file" spellcheck="false" name="filename" id="Image_input" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .svg, .webp">
+                </div>
+                <div class="Blog_Description" id="Blog_Description">
+                    <h2>Blog Description</h2>
+                    <div id="editor"></div>
+                </div>
+                <div class="mt-2 title">
+                    <img src="img/tag.svg" alt="icon">
+                    <h2>Tags</h2>
+                </div>
+                <div class="content">
+                    <p>Press enter or comma after each tag</p>
+                    <ul><input type="text" spellcheck="false" id="tags_input" ></ul>
+                </div>
+                <div class="details">
+                    <p><span>10</span> tags are remaining</p>
+                    <button>Remove All</button>
+                </div>
+                <div class="Meta_title">
+                    <h2>Meta title</h2>
+                    <input type="text" spellcheck="false" id="Meta_title_input">
+                </div>
+                <div class="Meta_keywords">
+                    <h2>Meta keywords</h2>
+                    <input type="text" spellcheck="false" id="Meta_keywords_input">
+                </div>
+                <div class="Meta_description">
+                    <h2>Meta description</h2>
+                    <input type="text" spellcheck="false" id="Meta_description_input">
+                </div>
+                <div class="Meta_robots">
+                    <h2>Meta robots</h2>
+                    <input type="text" spellcheck="false" id="Meta_robots_input">
+                </div>
+                <div class="Meta_viewport">
+                    <h2>Meta viewport</h2>
+                    <input type="text" spellcheck="false" id="Meta_viewport_input">
+                </div>
+                <div class="Meta_charset">
+                    <h2>Meta charset</h2>
+                    <input type="text" spellcheck="false" id="Meta_charset_input">
+                </div>
+                <div class="text-center mt-3 Submit_Button">
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips)  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- CK Editor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/super-build/ckeditor.js"></script>
+
+    <!-- Manual js-->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
